@@ -3,16 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93C922E1DAE49626A45ED317 /* Pods_SocialTL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8015F1D9F7CA3592E7728777 /* Pods_SocialTL.framework */; };
 		A25E8EE822E79F8C0042ACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E8EE722E79F8C0042ACE6 /* AppDelegate.swift */; };
-		A25E8EEA22E79F8C0042ACE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E8EE922E79F8C0042ACE6 /* ViewController.swift */; };
 		A25E8EED22E79F8C0042ACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E8EEB22E79F8C0042ACE6 /* Main.storyboard */; };
 		A25E8EEF22E79F8E0042ACE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25E8EEE22E79F8E0042ACE6 /* Assets.xcassets */; };
 		A25E8EF222E79F8E0042ACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E8EF022E79F8E0042ACE6 /* LaunchScreen.storyboard */; };
 		A25E8EFD22E79F8E0042ACE6 /* SocialTLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E8EFC22E79F8E0042ACE6 /* SocialTLTests.swift */; };
+		A2F5A8A522E7A31400D1576D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2F5A8A422E7A31400D1576D /* GoogleService-Info.plist */; };
+		A2F5A8A722E7A34400D1576D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8A622E7A34400D1576D /* Coordinator.swift */; };
+		A2F5A8AA22E7A3AD00D1576D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8A922E7A3AD00D1576D /* MainCoordinator.swift */; };
+		A2F5A8AC22E7A3C300D1576D /* TimelineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8AB22E7A3C300D1576D /* TimelineCoordinator.swift */; };
+		A2F5A8AE22E7A3D200D1576D /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8AD22E7A3D200D1576D /* ProfileCoordinator.swift */; };
+		A2F5A8B022E7AA0600D1576D /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8AF22E7AA0600D1576D /* LoginProtocols.swift */; };
+		A2F5A8B222E7AB5000D1576D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8B122E7AB5000D1576D /* LoginViewController.swift */; };
+		A2F5A8B522E7AB8700D1576D /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8B422E7AB8700D1576D /* StoryboardExtension.swift */; };
+		A2F5A8B722E7AC6600D1576D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8B622E7AC6600D1576D /* LoginPresenter.swift */; };
+		A2F5A8B922E7AF2300D1576D /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8B822E7AF2300D1576D /* HomeTabBarController.swift */; };
+		A2F5A8BB22E7B01000D1576D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8BA22E7B01000D1576D /* TimelineViewController.swift */; };
+		A2F5A8BD22E7B02000D1576D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8BC22E7B02000D1576D /* ProfileViewController.swift */; };
+		A2F5A8BF22E7B03600D1576D /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8BE22E7B03600D1576D /* ProfileProtocols.swift */; };
+		A2F5A8C122E7B04300D1576D /* TimelineProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8C022E7B04300D1576D /* TimelineProtocols.swift */; };
+		A2F5A8C622E7BC1400D1576D /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8C522E7BC1400D1576D /* HomeProtocols.swift */; };
+		A2F5A8CA22E7BD6800D1576D /* HomeTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8C922E7BD6800D1576D /* HomeTabBarPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071B2F8BD9B8F34F210A2980 /* Pods-SocialTL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTL.release.xcconfig"; path = "Target Support Files/Pods-SocialTL/Pods-SocialTL.release.xcconfig"; sourceTree = "<group>"; };
+		6CEA9FA2EF8A0E17865DCED1 /* Pods-SocialTL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTL.debug.xcconfig"; path = "Target Support Files/Pods-SocialTL/Pods-SocialTL.debug.xcconfig"; sourceTree = "<group>"; };
+		8015F1D9F7CA3592E7728777 /* Pods_SocialTL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialTL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25E8EE422E79F8C0042ACE6 /* SocialTL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25E8EE722E79F8C0042ACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A25E8EE922E79F8C0042ACE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A25E8EEC22E79F8C0042ACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A25E8EEE22E79F8E0042ACE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A25E8EF122E79F8E0042ACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +54,22 @@
 		A25E8EF822E79F8E0042ACE6 /* SocialTLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialTLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25E8EFC22E79F8E0042ACE6 /* SocialTLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTLTests.swift; sourceTree = "<group>"; };
 		A25E8EFE22E79F8E0042ACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2F5A8A422E7A31400D1576D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2F5A8A622E7A34400D1576D /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A2F5A8A922E7A3AD00D1576D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A2F5A8AB22E7A3C300D1576D /* TimelineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCoordinator.swift; sourceTree = "<group>"; };
+		A2F5A8AD22E7A3D200D1576D /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		A2F5A8AF22E7AA0600D1576D /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		A2F5A8B122E7AB5000D1576D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A2F5A8B422E7AB8700D1576D /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		A2F5A8B622E7AC6600D1576D /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		A2F5A8B822E7AF2300D1576D /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		A2F5A8BA22E7B01000D1576D /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		A2F5A8BC22E7B02000D1576D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A2F5A8BE22E7B03600D1576D /* ProfileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocols.swift; sourceTree = "<group>"; };
+		A2F5A8C022E7B04300D1576D /* TimelineProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProtocols.swift; sourceTree = "<group>"; };
+		A2F5A8C522E7BC1400D1576D /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		A2F5A8C922E7BD6800D1576D /* HomeTabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C922E1DAE49626A45ED317 /* Pods_SocialTL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6026D9D76B5E913A6BC72221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CEA9FA2EF8A0E17865DCED1 /* Pods-SocialTL.debug.xcconfig */,
+				071B2F8BD9B8F34F210A2980 /* Pods-SocialTL.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A25E8EDB22E79F8C0042ACE6 = {
 			isa = PBXGroup;
 			children = (
 				A25E8EE622E79F8C0042ACE6 /* SocialTL */,
 				A25E8EFB22E79F8E0042ACE6 /* SocialTLTests */,
 				A25E8EE522E79F8C0042ACE6 /* Products */,
+				6026D9D76B5E913A6BC72221 /* Pods */,
+				F2BE723E363C5C32393D3759 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +123,14 @@
 		A25E8EE622E79F8C0042ACE6 /* SocialTL */ = {
 			isa = PBXGroup;
 			children = (
+				A2F5A89A22E7A0EB00D1576D /* Models */,
+				A2F5A89922E7A0DC00D1576D /* Modules */,
+				A2F5A89822E7A0C900D1576D /* Coordinators */,
+				A2F5A8B322E7AB7000D1576D /* Extensions */,
 				A25E8EE722E79F8C0042ACE6 /* AppDelegate.swift */,
-				A25E8EE922E79F8C0042ACE6 /* ViewController.swift */,
-				A25E8EEB22E79F8C0042ACE6 /* Main.storyboard */,
 				A25E8EEE22E79F8E0042ACE6 /* Assets.xcassets */,
 				A25E8EF022E79F8E0042ACE6 /* LaunchScreen.storyboard */,
+				A2F5A8A422E7A31400D1576D /* GoogleService-Info.plist */,
 				A25E8EF322E79F8E0042ACE6 /* Info.plist */,
 			);
 			path = SocialTL;
@@ -96,6 +145,162 @@
 			path = SocialTLTests;
 			sourceTree = "<group>";
 		};
+		A2F5A89822E7A0C900D1576D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8A622E7A34400D1576D /* Coordinator.swift */,
+				A2F5A8A822E7A34C00D1576D /* Modules */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		A2F5A89922E7A0DC00D1576D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8C422E7BC0400D1576D /* Home */,
+				A2F5A89D22E7A12900D1576D /* Profile */,
+				A2F5A89C22E7A11E00D1576D /* Timeline */,
+				A2F5A89B22E7A10B00D1576D /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A2F5A89A22E7A0EB00D1576D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A2F5A89B22E7A10B00D1576D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8A322E7A26700D1576D /* Views */,
+				A2F5A8A022E7A24700D1576D /* Presenters */,
+				A2F5A8AF22E7AA0600D1576D /* LoginProtocols.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A2F5A89C22E7A11E00D1576D /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8A222E7A25F00D1576D /* Views */,
+				A2F5A89F22E7A23E00D1576D /* Presenters */,
+				A2F5A8C022E7B04300D1576D /* TimelineProtocols.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		A2F5A89D22E7A12900D1576D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8A122E7A25800D1576D /* Views */,
+				A2F5A89E22E7A23500D1576D /* Presenters */,
+				A2F5A8BE22E7B03600D1576D /* ProfileProtocols.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A2F5A89E22E7A23500D1576D /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		A2F5A89F22E7A23E00D1576D /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		A2F5A8A022E7A24700D1576D /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8B622E7AC6600D1576D /* LoginPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		A2F5A8A122E7A25800D1576D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8BC22E7B02000D1576D /* ProfileViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2F5A8A222E7A25F00D1576D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8BA22E7B01000D1576D /* TimelineViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2F5A8A322E7A26700D1576D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A25E8EEB22E79F8C0042ACE6 /* Main.storyboard */,
+				A2F5A8B122E7AB5000D1576D /* LoginViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2F5A8A822E7A34C00D1576D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8A922E7A3AD00D1576D /* MainCoordinator.swift */,
+				A2F5A8AB22E7A3C300D1576D /* TimelineCoordinator.swift */,
+				A2F5A8AD22E7A3D200D1576D /* ProfileCoordinator.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A2F5A8B322E7AB7000D1576D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8B422E7AB8700D1576D /* StoryboardExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A2F5A8C422E7BC0400D1576D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8C822E7BD4600D1576D /* Presenters */,
+				A2F5A8C722E7BD4000D1576D /* Views */,
+				A2F5A8C522E7BC1400D1576D /* HomeProtocols.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A2F5A8C722E7BD4000D1576D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8B822E7AF2300D1576D /* HomeTabBarController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2F5A8C822E7BD4600D1576D /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5A8C922E7BD6800D1576D /* HomeTabBarPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		F2BE723E363C5C32393D3759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8015F1D9F7CA3592E7728777 /* Pods_SocialTL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25E8F0122E79F8E0042ACE6 /* Build configuration list for PBXNativeTarget "SocialTL" */;
 			buildPhases = (
+				5A1C07681B20931E0AAFC0EB /* [CP] Check Pods Manifest.lock */,
 				A25E8EE022E79F8C0042ACE6 /* Sources */,
 				A25E8EE122E79F8C0042ACE6 /* Frameworks */,
 				A25E8EE222E79F8C0042ACE6 /* Resources */,
+				E76BE0B32F8BE75583D9770C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25E8EF222E79F8E0042ACE6 /* LaunchScreen.storyboard in Resources */,
+				A2F5A8A522E7A31400D1576D /* GoogleService-Info.plist in Resources */,
 				A25E8EEF22E79F8E0042ACE6 /* Assets.xcassets in Resources */,
 				A25E8EED22E79F8C0042ACE6 /* Main.storyboard in Resources */,
 			);
@@ -192,13 +400,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A1C07681B20931E0AAFC0EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialTL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E76BE0B32F8BE75583D9770C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialTL/Pods-SocialTL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialTL/Pods-SocialTL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialTL/Pods-SocialTL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A25E8EE022E79F8C0042ACE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25E8EEA22E79F8C0042ACE6 /* ViewController.swift in Sources */,
+				A2F5A8B222E7AB5000D1576D /* LoginViewController.swift in Sources */,
+				A2F5A8CA22E7BD6800D1576D /* HomeTabBarPresenter.swift in Sources */,
+				A2F5A8C622E7BC1400D1576D /* HomeProtocols.swift in Sources */,
+				A2F5A8BB22E7B01000D1576D /* TimelineViewController.swift in Sources */,
 				A25E8EE822E79F8C0042ACE6 /* AppDelegate.swift in Sources */,
+				A2F5A8B522E7AB8700D1576D /* StoryboardExtension.swift in Sources */,
+				A2F5A8C122E7B04300D1576D /* TimelineProtocols.swift in Sources */,
+				A2F5A8BF22E7B03600D1576D /* ProfileProtocols.swift in Sources */,
+				A2F5A8B722E7AC6600D1576D /* LoginPresenter.swift in Sources */,
+				A2F5A8B922E7AF2300D1576D /* HomeTabBarController.swift in Sources */,
+				A2F5A8BD22E7B02000D1576D /* ProfileViewController.swift in Sources */,
+				A2F5A8AA22E7A3AD00D1576D /* MainCoordinator.swift in Sources */,
+				A2F5A8A722E7A34400D1576D /* Coordinator.swift in Sources */,
+				A2F5A8B022E7AA0600D1576D /* LoginProtocols.swift in Sources */,
+				A2F5A8AE22E7A3D200D1576D /* ProfileCoordinator.swift in Sources */,
+				A2F5A8AC22E7A3C300D1576D /* TimelineCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +622,7 @@
 		};
 		A25E8F0222E79F8E0042ACE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEA9FA2EF8A0E17865DCED1 /* Pods-SocialTL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,7 +631,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chila.SocialTL;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DaNiELChIoRo.Social-Timeline";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -375,6 +640,7 @@
 		};
 		A25E8F0322E79F8E0042ACE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071B2F8BD9B8F34F210A2980 /* Pods-SocialTL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,7 +649,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chila.SocialTL;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DaNiELChIoRo.Social-Timeline";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -12,12 +12,14 @@ class LoadingViewController: UIViewController, LoadingViewable, Storyboarded {
 
     private var presenter: LoadingPresentable!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         presenter.routeToInitialScreen()
     }
     

@@ -10,9 +10,28 @@
 		93C922E1DAE49626A45ED317 /* Pods_SocialTL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8015F1D9F7CA3592E7728777 /* Pods_SocialTL.framework */; };
 		A25E8EE822E79F8C0042ACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E8EE722E79F8C0042ACE6 /* AppDelegate.swift */; };
 		A25E8EED22E79F8C0042ACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E8EEB22E79F8C0042ACE6 /* Main.storyboard */; };
-		A25E8EEF22E79F8E0042ACE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25E8EEE22E79F8E0042ACE6 /* Assets.xcassets */; };
 		A25E8EF222E79F8E0042ACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E8EF022E79F8E0042ACE6 /* LaunchScreen.storyboard */; };
 		A25E8EFD22E79F8E0042ACE6 /* SocialTLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E8EFC22E79F8E0042ACE6 /* SocialTLTests.swift */; };
+		A27CB28F22E89DE60009DF38 /* FormTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB28D22E89DE60009DF38 /* FormTags.swift */; };
+		A27CB29022E89DE60009DF38 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB28E22E89DE60009DF38 /* FormViewController.swift */; };
+		A27CB29222E8A5A20009DF38 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB29122E8A5A20009DF38 /* SignupPresenter.swift */; };
+		A27CB29422E8A5BB0009DF38 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB29322E8A5BB0009DF38 /* SignupViewController.swift */; };
+		A27CB29922E8ADE60009DF38 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB29722E8ADE60009DF38 /* Alerts.swift */; };
+		A27CB29A22E8ADE60009DF38 /* AlertHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB29822E8ADE60009DF38 /* AlertHeaderModel.swift */; };
+		A27CB29D22E8B2400009DF38 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB29C22E8B2400009DF38 /* API.swift */; };
+		A27CB29F22E8B6AE0009DF38 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB29E22E8B6AE0009DF38 /* User.swift */; };
+		A27CB2A122E8CCB90009DF38 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27CB2A022E8CCB90009DF38 /* Timeline.storyboard */; };
+		A27CB2A322E8CCCA0009DF38 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27CB2A222E8CCCA0009DF38 /* Profile.storyboard */; };
+		A27CB2A522E8CD6B0009DF38 /* TimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB2A422E8CD6B0009DF38 /* TimelinePresenter.swift */; };
+		A27CB2A722E8CDA20009DF38 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CB2A622E8CDA20009DF38 /* ProfilePresenter.swift */; };
+		A27CB2A922E8DC390009DF38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27CB2A822E8DC390009DF38 /* Assets.xcassets */; };
+		A2C6447B22E9E792005601F0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6447A22E9E792005601F0 /* LoadingViewController.swift */; };
+		A2C6447D22E9E7E4005601F0 /* LoadingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6447C22E9E7E4005601F0 /* LoadingPresenter.swift */; };
+		A2C6447F22E9F295005601F0 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6447E22E9F295005601F0 /* LoginCoordinator.swift */; };
+		A2C6448122E9F3E2005601F0 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6448022E9F3E2005601F0 /* HomeCoordinator.swift */; };
+		A2C6448322EA0497005601F0 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6448222EA0497005601F0 /* AddPostViewController.swift */; };
+		A2C6448522EA04E9005601F0 /* AddPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6448422EA04E9005601F0 /* AddPostPresenter.swift */; };
+		A2C6448722EA081E005601F0 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6448622EA081E005601F0 /* DatabaseManager.swift */; };
 		A2F5A8A522E7A31400D1576D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2F5A8A422E7A31400D1576D /* GoogleService-Info.plist */; };
 		A2F5A8A722E7A34400D1576D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8A622E7A34400D1576D /* Coordinator.swift */; };
 		A2F5A8AA22E7A3AD00D1576D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5A8A922E7A3AD00D1576D /* MainCoordinator.swift */; };
@@ -48,12 +67,31 @@
 		A25E8EE422E79F8C0042ACE6 /* SocialTL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25E8EE722E79F8C0042ACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A25E8EEC22E79F8C0042ACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A25E8EEE22E79F8E0042ACE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A25E8EF122E79F8E0042ACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A25E8EF322E79F8E0042ACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A25E8EF822E79F8E0042ACE6 /* SocialTLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialTLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25E8EFC22E79F8E0042ACE6 /* SocialTLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTLTests.swift; sourceTree = "<group>"; };
 		A25E8EFE22E79F8E0042ACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27CB28D22E89DE60009DF38 /* FormTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTags.swift; sourceTree = "<group>"; };
+		A27CB28E22E89DE60009DF38 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		A27CB29122E8A5A20009DF38 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
+		A27CB29322E8A5BB0009DF38 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A27CB29722E8ADE60009DF38 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		A27CB29822E8ADE60009DF38 /* AlertHeaderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHeaderModel.swift; sourceTree = "<group>"; };
+		A27CB29C22E8B2400009DF38 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A27CB29E22E8B6AE0009DF38 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A27CB2A022E8CCB90009DF38 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
+		A27CB2A222E8CCCA0009DF38 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		A27CB2A422E8CD6B0009DF38 /* TimelinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinePresenter.swift; sourceTree = "<group>"; };
+		A27CB2A622E8CDA20009DF38 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		A27CB2A822E8DC390009DF38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SocialTL/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		A2C6447A22E9E792005601F0 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		A2C6447C22E9E7E4005601F0 /* LoadingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPresenter.swift; sourceTree = "<group>"; };
+		A2C6447E22E9F295005601F0 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		A2C6448022E9F3E2005601F0 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		A2C6448222EA0497005601F0 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		A2C6448422EA04E9005601F0 /* AddPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostPresenter.swift; sourceTree = "<group>"; };
+		A2C6448622EA081E005601F0 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		A2F5A8A422E7A31400D1576D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2F5A8A622E7A34400D1576D /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A2F5A8A922E7A3AD00D1576D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -126,9 +164,11 @@
 				A2F5A89A22E7A0EB00D1576D /* Models */,
 				A2F5A89922E7A0DC00D1576D /* Modules */,
 				A2F5A89822E7A0C900D1576D /* Coordinators */,
+				A27CB28B22E89D880009DF38 /* Common */,
 				A2F5A8B322E7AB7000D1576D /* Extensions */,
+				A27CB29B22E8B1BC0009DF38 /* Services */,
+				A27CB2A822E8DC390009DF38 /* Assets.xcassets */,
 				A25E8EE722E79F8C0042ACE6 /* AppDelegate.swift */,
-				A25E8EEE22E79F8E0042ACE6 /* Assets.xcassets */,
 				A25E8EF022E79F8E0042ACE6 /* LaunchScreen.storyboard */,
 				A2F5A8A422E7A31400D1576D /* GoogleService-Info.plist */,
 				A25E8EF322E79F8E0042ACE6 /* Info.plist */,
@@ -143,6 +183,50 @@
 				A25E8EFE22E79F8E0042ACE6 /* Info.plist */,
 			);
 			path = SocialTLTests;
+			sourceTree = "<group>";
+		};
+		A27CB28B22E89D880009DF38 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A27CB29522E8ACF10009DF38 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A27CB28C22E89D990009DF38 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				A27CB28D22E89DE60009DF38 /* FormTags.swift */,
+				A27CB28E22E89DE60009DF38 /* FormViewController.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		A27CB29522E8ACF10009DF38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A27CB29622E8AD490009DF38 /* Alerts */,
+				A27CB28C22E89D990009DF38 /* Forms */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A27CB29622E8AD490009DF38 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				A27CB29822E8ADE60009DF38 /* AlertHeaderModel.swift */,
+				A27CB29722E8ADE60009DF38 /* Alerts.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		A27CB29B22E8B1BC0009DF38 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A27CB29C22E8B2400009DF38 /* API.swift */,
+				A2C6448622EA081E005601F0 /* DatabaseManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A2F5A89822E7A0C900D1576D /* Coordinators */ = {
@@ -168,6 +252,7 @@
 		A2F5A89A22E7A0EB00D1576D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A27CB29E22E8B6AE0009DF38 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +290,7 @@
 		A2F5A89E22E7A23500D1576D /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				A27CB2A622E8CDA20009DF38 /* ProfilePresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -212,6 +298,8 @@
 		A2F5A89F22E7A23E00D1576D /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				A27CB2A422E8CD6B0009DF38 /* TimelinePresenter.swift */,
+				A2C6448422EA04E9005601F0 /* AddPostPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -220,6 +308,8 @@
 			isa = PBXGroup;
 			children = (
 				A2F5A8B622E7AC6600D1576D /* LoginPresenter.swift */,
+				A27CB29122E8A5A20009DF38 /* SignupPresenter.swift */,
+				A2C6447C22E9E7E4005601F0 /* LoadingPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -227,6 +317,7 @@
 		A2F5A8A122E7A25800D1576D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A27CB2A222E8CCCA0009DF38 /* Profile.storyboard */,
 				A2F5A8BC22E7B02000D1576D /* ProfileViewController.swift */,
 			);
 			path = Views;
@@ -235,7 +326,9 @@
 		A2F5A8A222E7A25F00D1576D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A27CB2A022E8CCB90009DF38 /* Timeline.storyboard */,
 				A2F5A8BA22E7B01000D1576D /* TimelineViewController.swift */,
+				A2C6448222EA0497005601F0 /* AddPostViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +338,8 @@
 			children = (
 				A25E8EEB22E79F8C0042ACE6 /* Main.storyboard */,
 				A2F5A8B122E7AB5000D1576D /* LoginViewController.swift */,
+				A27CB29322E8A5BB0009DF38 /* SignupViewController.swift */,
+				A2C6447A22E9E792005601F0 /* LoadingViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +348,8 @@
 			isa = PBXGroup;
 			children = (
 				A2F5A8A922E7A3AD00D1576D /* MainCoordinator.swift */,
+				A2C6447E22E9F295005601F0 /* LoginCoordinator.swift */,
+				A2C6448022E9F3E2005601F0 /* HomeCoordinator.swift */,
 				A2F5A8AB22E7A3C300D1576D /* TimelineCoordinator.swift */,
 				A2F5A8AD22E7A3D200D1576D /* ProfileCoordinator.swift */,
 			);
@@ -384,9 +481,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27CB2A322E8CCCA0009DF38 /* Profile.storyboard in Resources */,
 				A25E8EF222E79F8E0042ACE6 /* LaunchScreen.storyboard in Resources */,
 				A2F5A8A522E7A31400D1576D /* GoogleService-Info.plist in Resources */,
-				A25E8EEF22E79F8E0042ACE6 /* Assets.xcassets in Resources */,
+				A27CB2A122E8CCB90009DF38 /* Timeline.storyboard in Resources */,
+				A27CB2A922E8DC390009DF38 /* Assets.xcassets in Resources */,
 				A25E8EED22E79F8C0042ACE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,21 +546,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27CB29022E89DE60009DF38 /* FormViewController.swift in Sources */,
 				A2F5A8B222E7AB5000D1576D /* LoginViewController.swift in Sources */,
+				A27CB29422E8A5BB0009DF38 /* SignupViewController.swift in Sources */,
 				A2F5A8CA22E7BD6800D1576D /* HomeTabBarPresenter.swift in Sources */,
 				A2F5A8C622E7BC1400D1576D /* HomeProtocols.swift in Sources */,
+				A27CB29222E8A5A20009DF38 /* SignupPresenter.swift in Sources */,
 				A2F5A8BB22E7B01000D1576D /* TimelineViewController.swift in Sources */,
+				A27CB2A522E8CD6B0009DF38 /* TimelinePresenter.swift in Sources */,
 				A25E8EE822E79F8C0042ACE6 /* AppDelegate.swift in Sources */,
 				A2F5A8B522E7AB8700D1576D /* StoryboardExtension.swift in Sources */,
+				A2C6448322EA0497005601F0 /* AddPostViewController.swift in Sources */,
+				A27CB29A22E8ADE60009DF38 /* AlertHeaderModel.swift in Sources */,
 				A2F5A8C122E7B04300D1576D /* TimelineProtocols.swift in Sources */,
+				A27CB2A722E8CDA20009DF38 /* ProfilePresenter.swift in Sources */,
 				A2F5A8BF22E7B03600D1576D /* ProfileProtocols.swift in Sources */,
 				A2F5A8B722E7AC6600D1576D /* LoginPresenter.swift in Sources */,
 				A2F5A8B922E7AF2300D1576D /* HomeTabBarController.swift in Sources */,
 				A2F5A8BD22E7B02000D1576D /* ProfileViewController.swift in Sources */,
+				A2C6448122E9F3E2005601F0 /* HomeCoordinator.swift in Sources */,
+				A27CB29D22E8B2400009DF38 /* API.swift in Sources */,
+				A27CB28F22E89DE60009DF38 /* FormTags.swift in Sources */,
 				A2F5A8AA22E7A3AD00D1576D /* MainCoordinator.swift in Sources */,
+				A2C6447F22E9F295005601F0 /* LoginCoordinator.swift in Sources */,
+				A2C6448722EA081E005601F0 /* DatabaseManager.swift in Sources */,
 				A2F5A8A722E7A34400D1576D /* Coordinator.swift in Sources */,
+				A2C6448522EA04E9005601F0 /* AddPostPresenter.swift in Sources */,
 				A2F5A8B022E7AA0600D1576D /* LoginProtocols.swift in Sources */,
+				A27CB29F22E8B6AE0009DF38 /* User.swift in Sources */,
+				A2C6447D22E9E7E4005601F0 /* LoadingPresenter.swift in Sources */,
+				A2C6447B22E9E792005601F0 /* LoadingViewController.swift in Sources */,
 				A2F5A8AE22E7A3D200D1576D /* ProfileCoordinator.swift in Sources */,
+				A27CB29922E8ADE60009DF38 /* Alerts.swift in Sources */,
 				A2F5A8AC22E7A3C300D1576D /* TimelineCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

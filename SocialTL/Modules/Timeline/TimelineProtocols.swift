@@ -9,11 +9,12 @@
 import UIKit
 
 protocol TimelinePresentable {
-    func loginUser()
+    func addPost()
 }
 
 protocol TimelineViewable: class {
     func setup(title: String, presenter: TimelinePresentable)
+    func setSection(icon: String, title: String)
 }
 
 //MARK:- AddPost
@@ -22,6 +23,5 @@ protocol AddPostPresentable {
 }
 
 protocol AddPostViewable: class {
-    func setup(title: String, presenter: AddPostPresentable)
-    func closeView()
+    func setup(presenter: AddPostPresentable)
 }

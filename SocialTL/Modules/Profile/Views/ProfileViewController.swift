@@ -9,6 +9,8 @@
 import UIKit
 
 class ProfileViewController: UIViewController, Storyboarded, ProfileViewable {
+    private var presenter: ProfilePresentable!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,5 +19,15 @@ class ProfileViewController: UIViewController, Storyboarded, ProfileViewable {
     
     func setup(title: String, presenter: ProfilePresentable) {
         print(title)
+        self.presenter = presenter
+    }
+    
+    func setSection(icon: String, title: String) {
+        self.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
+    }
+    
+    //    MARK:- Actions
+    @IBAction func signoutTapped(_ sender: UIButton) {
+        presenter.signout()
     }
 }

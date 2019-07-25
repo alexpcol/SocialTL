@@ -13,5 +13,5 @@ protocol HomeTabBarPresentable {
 }
 
 protocol HomeTabBarViewable: class {
-    func setup()
+    func setup(coordinators: [Coordinator])
 }

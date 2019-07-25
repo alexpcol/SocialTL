@@ -10,14 +10,24 @@ import UIKit
 
 class HomeTabBarController: UITabBarController, HomeTabBarViewable {
     
-
+    var coordinators: [Coordinator]!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
-    func setup() {
-        print("setup")
+    func setup(coordinators: [Coordinator]) {
+        self.coordinators = coordinators
+        startCoordinators()
     }
+    
+    private func startCoordinators() {
+        var controllers: [UINavigationController] = []
+        for coordinator in coordinators {
+            coordinator.start()
+            controllers.append(coordinator.navigationController)
+        }
+        viewControllers = controllers
+    }
+    
     
 }

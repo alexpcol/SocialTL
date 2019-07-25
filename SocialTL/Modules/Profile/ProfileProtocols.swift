@@ -9,9 +9,10 @@
 import UIKit
 
 protocol ProfilePresentable {
-    func loginUser()
+    func signout()
 }
 
 protocol ProfileViewable: class {
     func setup(title: String, presenter: ProfilePresentable)
+    func setSection(icon: String, title: String)
 }

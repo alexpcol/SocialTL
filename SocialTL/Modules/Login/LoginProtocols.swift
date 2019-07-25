@@ -8,20 +8,34 @@
 
 import UIKit
 
+//MARK:- Loading
+protocol LoadingPresentable {
+    func routeToInitialScreen()
+}
+
+protocol LoadingViewable: class {
+    func setup(presenter: LoadingPresentable)
+}
+
+//MARK:- Login
 protocol LoginPresentable {
-    func loginUser()
+    func signInUser()
+    func signUpUser()
+    func startEditing(field: UITextField, withText text: String)
 }
 
 protocol LoginViewable: class {
-    func setup(title: String, presenter: LoginPresentable)
+    func setup(presenter: LoginPresentable)
+    func show(alert: AlertHeaderModel)
 }
 
 //MARK:- Signup
 protocol SignupPresentable {
     func signUpUser()
+    func startEditing(field: UITextField, withText text: String)
 }
 
 protocol SignupViewable: class {
-    func setup(title: String, presenter: SignupPresentable)
-    func closeView()
+    func setup(presenter: SignupPresentable)
+    func show(alert: AlertHeaderModel)
 }

@@ -11,6 +11,7 @@ import Firebase
 
 class ProfileCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
+    weak var parentCoordinator: HomeCoordinator?
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -19,7 +20,14 @@ class ProfileCoordinator: Coordinator {
     
     //MARK:- MVP Methods
     func start() {
-        
+        let profileViewController = ProfileViewController.instantiate(fromStoryboard: "Profile")
+        let presenter = ProfilePresenter(withCoordinator: self)
+        presenter.attach(view: profileViewController as ProfileViewable)
+        navigationController.pushViewController(profileViewController, animated: true)
+    }
+    
+    func signOut() {
+        parentCoordinator?.signOut()
     }
     
 }

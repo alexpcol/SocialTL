@@ -68,7 +68,7 @@ class SignupPresenter: SignupPresentable {
         databaseManager?.create(user: user, completion: { (result) in
             switch result {
             case .success( _):
-                self.coordinator.dismissLogin()
+                self.coordinator.routeHome()
             case .failure(let e):
                 print(e)
             }

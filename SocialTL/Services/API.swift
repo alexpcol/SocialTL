@@ -23,12 +23,11 @@ class API {
     
     func signinUser(email: String, password: String, completion: @escaping Response) {
         auth.signIn(withEmail: email, password: password) { (result, error) in
-            guard let firebaseUser = result?.user, let email = firebaseUser.email ,error == nil else {
+            guard let firebaseUser = result?.user ,error == nil else {
                 completion(.failure(error!))
                 return
             }
-            let user = User(uid: firebaseUser.uid, username: email, email: email)
-            completion(.success(user))
+            completion(.success(firebaseUser.uid))
         }
     }
     

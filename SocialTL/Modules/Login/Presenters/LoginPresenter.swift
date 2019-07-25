@@ -14,6 +14,7 @@ class LoginPresenter: LoginPresentable {
     private var email: String?
     private var password: String?
     private var api: API
+    private var databaseManager: DatabaseManager?
     
     private var screenTitle: String = "Login"
     
@@ -55,12 +56,23 @@ class LoginPresenter: LoginPresentable {
         api.signinUser(email: email!, password: password!) { (result) in
             switch result {
             case .success(let data):
-                let user = data as! User
-                self.coordinator.dismissLogin()
+                self.coordinator.routeHome()
             case .failure(let e):
                 print(e)
             }
         }
+    }
+    
+    private func fetch(userid: String, completion: @escaping Response) {
+        databaseManager = DatabaseManager(userid: userid)
+        databaseManager?.fetchUser(completion: { (result) in
+            switch result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let e):
+                completion(.failure(e))
+            }
+        })
     }
     
     private func validateForm() -> Bool {

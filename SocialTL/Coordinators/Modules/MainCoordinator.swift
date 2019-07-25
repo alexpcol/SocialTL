@@ -42,6 +42,9 @@ class MainCoordinator: Coordinator {
                 break
             }
         }
+        if childCoordinators.isEmpty {
+            navigationController.popViewController(animated: false)
+        }
     }
     
     func routeHome(for user: User) {

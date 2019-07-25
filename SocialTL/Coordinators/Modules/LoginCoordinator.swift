@@ -31,8 +31,7 @@ class LoginCoordinator: Coordinator {
         navigationController.pushViewController(signupViewController, animated: true)
     }
     
-    func dismissLogin() {
+    func routeHome() {
         parentCoordinator?.childDidFinish(self)
-        navigationController.popViewController(animated: false)
     }
 }

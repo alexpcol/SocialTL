@@ -55,7 +55,7 @@ class LoginPresenter: LoginPresentable {
     private func signinFirebase() {
         api.signinUser(email: email!, password: password!) { (result) in
             switch result {
-            case .success(let data):
+            case .success( _):
                 self.coordinator.routeHome()
             case .failure(let e):
                 print(e)

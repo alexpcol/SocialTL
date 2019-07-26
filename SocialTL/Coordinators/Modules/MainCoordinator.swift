@@ -43,7 +43,7 @@ class MainCoordinator: Coordinator {
             }
         }
         if childCoordinators.isEmpty {
-            navigationController.popViewController(animated: false)
+            navigationController.popToRootViewController(animated: false)
         }
     }
     

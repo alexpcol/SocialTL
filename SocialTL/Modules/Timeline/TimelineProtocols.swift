@@ -9,12 +9,13 @@
 import UIKit
 
 protocol TimelinePresentable {
-    func addPost()
+    func fetchPosts()
 }
 
 protocol TimelineViewable: class {
     func setup(title: String, presenter: TimelinePresentable)
     func setSection(icon: String, title: String)
+    func showAddButton(action: @escaping () -> Void)
 }
 
 //MARK:- AddPost

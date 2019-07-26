@@ -9,7 +9,6 @@
 import UIKit
 
 class TimelinePresenter: TimelinePresentable {
-    
     private weak var view: TimelineViewable?
     private var coordinator: TimelineCoordinator
     
@@ -21,9 +20,18 @@ class TimelinePresenter: TimelinePresentable {
         self.view = view
         self.view?.setup(title: "Timeline", presenter: self as TimelinePresentable)
         self.view?.setSection(icon: "person", title: "Feed")
+        self.view?.showAddButton(action: {
+            self.coordinator.addPost()
+        })
     }
     
-    func addPost() {
+    func fetchPosts() {
+        print("fetch")
+    }
+    
+    private func addPost() {
         coordinator.addPost()
     }
+    
+    
 }

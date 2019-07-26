@@ -10,6 +10,7 @@ import UIKit
 
 class TimelineViewController: UIViewController, Storyboarded, TimelineViewable {
     private var presenter: TimelinePresentable!
+    private var addButtonAction:(() -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +25,15 @@ class TimelineViewController: UIViewController, Storyboarded, TimelineViewable {
         self.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
     }
     
+    func showAddButton(action: @escaping () -> Void) {
+        addButtonAction = action
+        let addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAddButton))
+        navigationItem.rightBarButtonItems = [addButtonItem]
+    }
+    
     //MARK:- Actions
-    @IBAction func addPostTapped(_ sender: UIButton) {
-        presenter.addPost()
+    @objc private func didTapAddButton() {
+        addButtonAction?()
     }
 
 }

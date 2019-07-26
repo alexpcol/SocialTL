@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		93C922E1DAE49626A45ED317 /* Pods_SocialTL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8015F1D9F7CA3592E7728777 /* Pods_SocialTL.framework */; };
+		A25C86A022EBB57D004E4FDA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25C869E22EBB57D004E4FDA /* PostTableViewCell.swift */; };
+		A25C86A122EBB57D004E4FDA /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25C869F22EBB57D004E4FDA /* PostTableViewCell.xib */; };
 		A25E8EE822E79F8C0042ACE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E8EE722E79F8C0042ACE6 /* AppDelegate.swift */; };
 		A25E8EED22E79F8C0042ACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E8EEB22E79F8C0042ACE6 /* Main.storyboard */; };
 		A25E8EF222E79F8E0042ACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E8EF022E79F8E0042ACE6 /* LaunchScreen.storyboard */; };
@@ -64,6 +66,8 @@
 		071B2F8BD9B8F34F210A2980 /* Pods-SocialTL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTL.release.xcconfig"; path = "Target Support Files/Pods-SocialTL/Pods-SocialTL.release.xcconfig"; sourceTree = "<group>"; };
 		6CEA9FA2EF8A0E17865DCED1 /* Pods-SocialTL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialTL.debug.xcconfig"; path = "Target Support Files/Pods-SocialTL/Pods-SocialTL.debug.xcconfig"; sourceTree = "<group>"; };
 		8015F1D9F7CA3592E7728777 /* Pods_SocialTL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialTL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25C869E22EBB57D004E4FDA /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		A25C869F22EBB57D004E4FDA /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		A25E8EE422E79F8C0042ACE6 /* SocialTL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialTL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25E8EE722E79F8C0042ACE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A25E8EEC22E79F8C0042ACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +140,15 @@
 				071B2F8BD9B8F34F210A2980 /* Pods-SocialTL.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A25C869D22EBB556004E4FDA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A25C869E22EBB57D004E4FDA /* PostTableViewCell.swift */,
+				A25C869F22EBB57D004E4FDA /* PostTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		A25E8EDB22E79F8C0042ACE6 = {
@@ -326,6 +339,7 @@
 		A2F5A8A222E7A25F00D1576D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A25C869D22EBB556004E4FDA /* Cells */,
 				A27CB2A022E8CCB90009DF38 /* Timeline.storyboard */,
 				A2F5A8BA22E7B01000D1576D /* TimelineViewController.swift */,
 				A2C6448222EA0497005601F0 /* AddPostViewController.swift */,
@@ -485,6 +499,7 @@
 				A25E8EF222E79F8E0042ACE6 /* LaunchScreen.storyboard in Resources */,
 				A2F5A8A522E7A31400D1576D /* GoogleService-Info.plist in Resources */,
 				A27CB2A122E8CCB90009DF38 /* Timeline.storyboard in Resources */,
+				A25C86A122EBB57D004E4FDA /* PostTableViewCell.xib in Resources */,
 				A27CB2A922E8DC390009DF38 /* Assets.xcassets in Resources */,
 				A25E8EED22E79F8C0042ACE6 /* Main.storyboard in Resources */,
 			);
@@ -565,6 +580,7 @@
 				A2F5A8B922E7AF2300D1576D /* HomeTabBarController.swift in Sources */,
 				A2F5A8BD22E7B02000D1576D /* ProfileViewController.swift in Sources */,
 				A2C6448122E9F3E2005601F0 /* HomeCoordinator.swift in Sources */,
+				A25C86A022EBB57D004E4FDA /* PostTableViewCell.swift in Sources */,
 				A27CB29D22E8B2400009DF38 /* API.swift in Sources */,
 				A27CB28F22E89DE60009DF38 /* FormTags.swift in Sources */,
 				A2F5A8AA22E7A3AD00D1576D /* MainCoordinator.swift in Sources */,
